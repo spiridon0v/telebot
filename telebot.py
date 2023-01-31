@@ -25,7 +25,7 @@ def parse_url():
     r = requests.get(url).text
     soup = b(r, 'html.parser')
     block = soup.find_all('a', href=True, target=True)
-    link = block[-4].get('href')  # ссылка
+    link = block[-4].get('href') 
     return link
 
 
@@ -84,5 +84,5 @@ async def reaction(message: types.Message):
 
 
 if __name__ == '__main__':
-    print(parse_date())
+    
     executor.start_polling(dp, skip_updates=True)
