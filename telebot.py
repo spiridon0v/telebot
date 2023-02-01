@@ -9,10 +9,10 @@ from aiogram.utils import executor
 from bs4 import BeautifulSoup as b
 from urllib.request import urlretrieve
 
-url = 'https://school42.nubex.ru/11282/'
+url = ''
 
 
-bot = Bot('5917714388:AAG_rWR8bbP-xLTFouT9qHWpjmc-mfk4RtM')
+bot = Bot('')
 dp = Dispatcher(bot)
 
 button = KeyboardButton("Замена")
